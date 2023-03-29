@@ -1,0 +1,104 @@
+<nz-layout>
+  <nz-header nzHeight="auto">
+    <div class="logo"></div>
+    <ul nz-menu nzTheme="dark" nzMode="horizontal" class="header-menu">
+      <li nz-menu-item nzSelected>
+        <a href="https://instagram.com/shreeganesh1772?igshid=NDk5N2NlZjQ="
+          >Instagram</a
+        >
+      </li>
+      <li nz-menu-item>
+        <a href="https://www.facebook.com/pratik.mali.921230">Facebook</a>
+      </li>
+      <li nz-menu-item>
+        <a href="https://youtube.com/@user-ic5ij4km1f">My channel</a>
+      </li>
+      <li nz-menu-item style="float: right">
+        <button nz-button style="height: 50px; background-color: transparent">
+          <nz-avatar
+            nzIcon="user"
+            style="background-color: #87d068"
+          ></nz-avatar>
+        </button>
+      </li>
+    </ul>
+  </nz-header>
+  <nz-layout>
+    <nz-sider nzWidth="200px" nzTheme="light">
+      <ul
+        nz-menu
+        nzMode="inline"
+        class="sider-menu"
+        [nzTheme]="theme ? 'dark' : 'light'"
+      >
+        <li nz-submenu nzOpen nzIcon="user" nzTitle="Website">
+          <ul>
+            <li nz-menu-item nzSelected>
+              <a
+                href="https://bhandekunal16.github.io/Robotec-project/"
+                class="icon"
+                >Robotec-project</a
+              >
+            </li>
+            <li nz-menu-item>
+              <a
+                href="https://bhandekunal16.github.io/Smart-school/"
+                class="icon"
+              ></a
+              >Smart-school
+            </li>
+            <li nz-menu-item>
+              <a
+                href="https://bhandekunal16.github.io/HOSPITAL-PROJECT-HTML---CSS/"
+                class="icon"
+                >Smart-Hospital</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li nz-submenu nzTitle="Setting" nzIcon="laptop">
+          <ul>
+            <!-- <li nz-menu-item>
+              <a (click)="profile()" class="icon">Profile</a>
+            </li> -->
+            <li nz-menu-item>
+              <p>Switch mode</p>
+            </li>
+            <li nz-menu-item>
+              <nz-switch
+                [(ngModel)]="theme"
+                style="display: flex; justify-content: center"
+              >
+                <span unchecked>Dark</span>
+                <span checked>Light</span>
+              </nz-switch>
+            </li>
+          </ul>
+        </li>
+        <li nz-submenu nzTitle="tools" nzIcon="notification">
+          <ul>
+            <!-- <li nz-menu-item (click)="userlist()"><a class="icon">user</a></li>
+            <li nz-menu-item (click)="productlist()">
+              <a class="icon">Product</a>
+            </li>
+            <li nz-menu-item (click)="paichart()">
+              <a class="icon">progration</a>
+            </li> -->
+          </ul>
+        </li>
+      </ul>
+    </nz-sider>
+    <nz-layout class="inner-layout">
+      <nz-breadcrumb>
+        <nz-breadcrumb-item>Home</nz-breadcrumb-item>
+        <nz-breadcrumb-item>List</nz-breadcrumb-item>
+        <nz-breadcrumb-item>App</nz-breadcrumb-item>
+      </nz-breadcrumb>
+      <nz-content>
+        <div>
+          <router-outlet></router-outlet>
+        </div>
+      </nz-content>
+    </nz-layout>
+  </nz-layout>
+</nz-layout>
