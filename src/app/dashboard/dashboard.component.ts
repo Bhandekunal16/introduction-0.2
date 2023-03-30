@@ -80,10 +80,8 @@ export class DashboardComponent {
       relativeTo: this.router,
     });
   }
-  productlist() {
-    this.route.navigate(['/dashboard/productlist'], {
-      relativeTo: this.router,
-    });
+  template() {
+    this.route.navigate(['login-template-main']);
   }
 
   ngOnInit(): void {

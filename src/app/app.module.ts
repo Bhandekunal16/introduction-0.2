@@ -37,6 +37,9 @@ import { NzUploadModule } from 'ng-zorro-antd/upload';
 import { NzSkeletonModule } from 'ng-zorro-antd/skeleton';
 import { NzTableModule } from 'ng-zorro-antd/table';
 import { NzDividerModule } from 'ng-zorro-antd/divider';
+import { LoginTemplateMainComponent } from './login-template-main/login-template-main.component';
+import { LoginTemplatesComponent } from './login-templates/login-templates.component';
+import { LoginTemplatesBackgroundComponent } from './login-templates-background/login-templates-background.component';
 
 const antDesignIcons = AllIcons as {
   [key: string]: IconDefinition;
@@ -45,7 +48,7 @@ const icons: IconDefinition[] = Object.keys(antDesignIcons).map(
   (key) => antDesignIcons[key]
 );
 @NgModule({
-  declarations: [AppComponent, DashboardComponent],
+  declarations: [AppComponent, DashboardComponent, LoginTemplateMainComponent, LoginTemplatesComponent, LoginTemplatesBackgroundComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
