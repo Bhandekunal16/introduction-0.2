@@ -40,6 +40,7 @@ import { NzDividerModule } from 'ng-zorro-antd/divider';
 import { LoginTemplateMainComponent } from './login-template-main/login-template-main.component';
 import { LoginTemplatesComponent } from './login-templates/login-templates.component';
 import { LoginTemplatesBackgroundComponent } from './login-templates-background/login-templates-background.component';
+import { LoginTemplateSecComponent } from './login-template-sec/login-template-sec.component';
 
 const antDesignIcons = AllIcons as {
   [key: string]: IconDefinition;
@@ -48,7 +49,7 @@ const icons: IconDefinition[] = Object.keys(antDesignIcons).map(
   (key) => antDesignIcons[key]
 );
 @NgModule({
-  declarations: [AppComponent, DashboardComponent, LoginTemplateMainComponent, LoginTemplatesComponent, LoginTemplatesBackgroundComponent],
+  declarations: [AppComponent, DashboardComponent, LoginTemplateMainComponent, LoginTemplatesComponent, LoginTemplatesBackgroundComponent, LoginTemplateSecComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

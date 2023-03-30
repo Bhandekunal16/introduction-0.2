@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { LoginTemplateMainComponent } from './login-template-main/login-template-main.component';
+import { LoginTemplateSecComponent } from './login-template-sec/login-template-sec.component';
 import { LoginTemplatesBackgroundComponent } from './login-templates-background/login-templates-background.component';
 import { LoginTemplatesComponent } from './login-templates/login-templates.component';
 
@@ -16,7 +17,13 @@ const routes: Routes = [
   {
     path: 'login-background',
     component: LoginTemplatesBackgroundComponent,
-    children: [{ path: '', component: LoginTemplatesComponent }],
+    children: [
+      {
+        path: '',
+        component: LoginTemplatesComponent,
+      },
+      { path: 'two', component: LoginTemplateSecComponent },
+    ],
   },
 ];
 
