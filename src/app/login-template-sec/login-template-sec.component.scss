@@ -1,0 +1,55 @@
+.logo{
+    background-color: transparent;   
+    border-color: aquamarine;
+    width: 320px ;
+    height: 320px;
+    border-radius: 20px 0px 0px 20px;
+    box-shadow: 3px 3px 2px #cbced1, -3px -3px 20px #fff;
+    overflow: hidden;
+}
+.img{
+    padding-left: 15px;
+    padding-top: 15px;
+    width: 300px ;
+    height: 300px;
+    border-radius: 20px 0px 0px 20px;
+}
+.main{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 100px;
+    padding-bottom: 230px;
+    
+}
+.body{
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 320px ;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    border-color: aquamarine;
+    box-shadow: 3px 3px 2px #cbced1, 3px 3px 20px #fff;
+    overflow: hidden;
+    border-radius: 0px 20px 20px 0px;
+
+     .input {
+        margin-top: 20px;
+        border-radius: 20px 20px;
+        border-color: aquamarine;
+        background-color: transparent;
+        box-shadow: 3px 3px 2px #cbced1, -3px -3px 20px #fff;
+    }
+    .btn{
+        margin-top: 20px;
+        margin-left: 90px;
+        border-radius: 20px 20px;
+        box-shadow: 3px 3px 2px #cbced1, -3px -3px 20px #fff;
+        border-color: aquamarine;
+        width: 100px;
+        background-color: transparent;
+        color: white;
+    }
+}
